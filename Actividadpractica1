@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Receta de comidas</title>
+	<style>
+		h1 {
+			text-align: center;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Receta de comidas</h1>
+	<p>Ingredientes:</p>
+	<ul>
+		<li>5 huevos</li>
+		<li>500cc. de leche</li>
+		<li>200g de azúcar</li>
+	</ul>
+	<p>Preparación:</p>
+	<p>Vamos a poner la fuente en la que vamos a hacer el flan sobre otro recipiente con paredes más bajas (una tartera por ejemplo) . Esto es porque el flan se cocina a baño maría. Colorar primero el caramelo dentro de la flanera. Lo movemos un poquito para que cubra toda la superficie del molde y ahora sí, vamos a echar nuestra mezcla de flan adentro. Dice mi hermana que si ustedes quieren un flan bien lisito, como los que se compran en el supermercado, hay que colar la mezcla para que se le salgan los grumitos. sino, la dejan como está.</p>
+	<p>Una vez que tenemos todo armado, vamos a poner agua dentro del recipiente que contiene la flanera para nuestro baño maría y también vamos a ponerle por encima una tapa de papel aluminio para que no se forme costrita. Si no les molesta, pueden no ponerlo también. Así lo vamos a llevar a horno mínimo (160º) por 40 minutos aprox.</p>
+	<p>Para saber si el flan está listo, el truco es el mismo que para cualquier torta: se mete un cuchillo y debe salir seco. Si hacen esta prueba y sale así, el flan está listo. Antes de desmoldar, hay que dejar que el flan se enfríe del todo.</p>
+</body>
+</html>
