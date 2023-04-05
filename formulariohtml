@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	<form method="GET" action="buscar.php">
+		<label for="mes">Mes del año:</label>
+		<select id="mes" name="mes">
+			<option value="enero">Enero</option>
+			<option value="febrero">Febrero</option>
+			<option value="marzo">Marzo</option>
+			<option value="abril">Abril</option>
+			<option value="mayo">Mayo</option>
+			<option value="junio">Junio</option>
+			<option value="julio">Julio</option>
+			<option value="agosto">Agosto</option>
+			<option value="septiembre">Septiembre</option>
+			<option value="octubre">Octubre</option>
+			<option value="noviembre">Noviembre</option>
+			<option value="diciembre">Diciembre</option>
+		</select>
+		<br><br>
+		<label for="presupuesto">Presupuesto por persona:</label>
+		<input type="radio" id="menos100" name="presupuesto" value="menos100">
+		<label for="menos100">Menos de 100.000</label>
+		<input type="radio" id="entre100y200" name="presupuesto" value="entre100y200">
+		<label for="entre100y200">De 100.000 a 200.000</label>
+		<input type="radio" id="mas200" name="presupuesto" value="mas200">
+		<label for="mas200">Más de 200.000</label>
+		<br><br>
+		<label for="integrantes">Cantidad de integrantes del grupo familiar:</label>
+		<select id="integrantes" name="integrantes">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<br><br>
+		<label for="edades">Edades de los integrantes:</label>
+		<br>
+		<?php
+			for ($i=1; $i<=10; $i++) {
+				echo '<label for="edad'.$i.'">Integrante '.$i.': </label>';
+				echo '<input type="number" id="edad'.$i.'" name="edad'.$i.'" min="0" max="99">';
+				echo '<br>';
+			}
+		?>
+		<br>
+		<input type="submit" value="Buscar">
+	</form>
+</body>
+</html>
