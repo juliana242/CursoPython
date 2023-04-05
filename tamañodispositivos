@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ARGENPLANNER</title>
+	<style>
+		/* Estilo GRANDES DISPOSITIVOS */
+		@media only screen and (min-width: 1024px) {
+			body {
+				font-size: 24px;
+			}
+			.container {
+				width: 960px;
+				margin: 0 auto;
+			}
+			.box {
+				width: 33%;
+				float: left;
+				padding: 20px;
+			}
+		}
+		
+		/* Estilos MEDIANOS DISPOSITIVOS */
+		@media only screen and (min-width: 768px) and (max-width: 1023px) {
+			body {
+				font-size: 20px;
+			}
+			.container {
+				width: 768px;
+				margin: 0 auto;
+			}
+			.box {
+				width: 50%;
+				float: left;
+				padding: 15px;
+			}
+		}
+		
+		/* Estilos PEQUEÑOS DISPOSITIVOS */
+		@media only screen and (max-width: 767px) {
+			body {
+				font-size: 16px;
+			}
+			.container {
+				width: 100%;
+				margin: 0;
+			}
+			.box {
+				width: 100%;
+				float: none;
+				padding: 10px;
+			}
+		}
+		
+		/* ESTILO COMUN, DISPOSITIVOS DE FORMA GRAL */
+		body {
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+		}
+		.container {
+			background-color: #fff;
+			padding: 10px;
+		}
+		.box {
+			background-color: #ccc;
+			margin: 10px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	}
+	</style>
+</head>
+<body>
+	<h1>ARGENPLANNER</h1>
+	<div class="container">
+		<div class="box">Caja 1</div>
+		<div class="box">Caja 2</div>
+		<div class="box">Caja 3</div>
+		<div class="box">Caja 4</div>
+		<div class="box">Caja 5</div>
+		<div class="box">Caja 6</div>
+	</div>
+</body>
+</html>
