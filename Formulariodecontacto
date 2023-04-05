@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Contacto</title>
+	<script>
+		function validateForm() {
+			var name = document.forms["contactForm"]["name"].value;
+			var email = document.forms["contactForm"]["email"].value;
+			var message = document.forms["contactForm"]["message"].value;
+			var errorMessage = "";
+			
+			if (name == "") {
+				errorMessage += "El nombre es obligatorio.\n";
+			}
+			if (email == "") {
+				errorMessage += "El correo electrónico es obligatorio.\n";
+			}
+			if (message == "") {
+				errorMessage += "El mensaje es obligatorio.\n";
+			}
+			
+			if (errorMessage !== "") {
+				alert(errorMessage);
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Formulario de Contacto</h1>
+	<form name="contactForm" onsubmit="return validateForm()">
+		<label for="name">Nombre:</label>
+		<input type="text" name="name" id="name">
+		<br><br>
+		<label for="email">Correo Electrónico:</label>
+		<input type="email" name="email" id="email">
+		<br><br>
+		<label for="message">Mensaje:</label>
+		<textarea name="message" id="message"></textarea>
+		<br><br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
