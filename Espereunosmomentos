@@ -1,0 +1,40 @@
+// SE AGREGA LA ANIMACION CON MENSAJE DE: ESPERE UNOS MOMENTOS. (AL CLICKEAR EL BOTON DE BUSQUEDA)//
+
+//en java (para que sea animada)//
+
+function showLoader() {
+  document.getElementById("loader").style.display = "block";
+  setTimeout(function(){
+    document.getElementById("loader").style.display = "none";
+    document.forms[0].submit();
+  }, 2000);
+  return false;
+}
+
+
+//la agregamos en el html//
+
+<div id="loader">
+  <p>Espere unos momentos...</p>
+</div>
+
+//CSS//
+
+//círculo giratorio (spinner) usado para indicar al usuario que se está cargando algo en el sitio web.//
+//@keyframes establece la rotacion y la duracion total de la animacion//
+//display: none; oculta la animacion de carga, va a ser dinamica cuando la web lo precise//
+
+.loader {
+  border: 16px solid #f3f3f3; /* Grosor de la animación */
+  border-top: 16px solid #3498db; /* Color del ícono de carga */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; /* Animación de rotación */
+  display: none; /* La animación estará oculta inicialmente */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } /* Rotación completa */
+}
