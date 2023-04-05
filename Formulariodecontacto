@@ -1,3 +1,8 @@
+//Contener un formulario de contacto con validación realizada mediante Javascript.
+Opcional: el formulario podrá enviar un email utilizando algún servicio externo
+destinado para ello.//
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +15,13 @@
 			var errorMessage = "";
 			
 			if (name == "") {
-				errorMessage += "El nombre es obligatorio.\n";
+				errorMessage += "El campo "nombre" es obligatorio.\n";
 			}
 			if (email == "") {
-				errorMessage += "El correo electrónico es obligatorio.\n";
+				errorMessage += "El campo "correo electrónico" es obligatorio.\n";
 			}
 			if (message == "") {
-				errorMessage += "El mensaje es obligatorio.\n";
+				errorMessage += "El campo "mensaje" es obligatorio.\n";
 			}
 			
 			if (errorMessage !== "") {
