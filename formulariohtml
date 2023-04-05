@@ -1,8 +1,4 @@
-//Contener un formulario de contacto con validación realizada mediante Javascript.
-Opcional: el formulario podrá enviar un email utilizando algún servicio externo
-destinado para ello.//
-
-
+// FORMULARIO PRINCIPAL DE BUSQUEDA//
 
 
 <!DOCTYPE html>
