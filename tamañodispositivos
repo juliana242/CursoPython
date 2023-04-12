@@ -95,5 +95,9 @@ tamaños de dispositivos distintos.//
 		<div class="box">Caja 5</div>
 		<div class="box">Caja 6</div>
 	</div>
+	<!-- Agregar scripts de Bootstrap  -->
+	<script src="...................."></script>
+	<script src="........................."></script>
+	<script src="https://.................................
 </body>
 </html>
