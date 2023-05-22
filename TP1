@@ -1,1 +1,122 @@
+HTML
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArgenPlanner</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+<link rel="shortcut icon" href="css/imagenes/favicon.png.ico">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="css/imagenes/logoblanco.png" alt="Logo de ArgenPlanner" class="logo">
+          </div>
+        <nav>
+        <a name="#index.html">Inicio</a>
+        <a href="#somos-argenplanner">Sobre Nosotros</a>
+        <a href="#caracteristicas">Caracteristicas</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="paquetes.html">Paquetes</a>
+    </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <h1 class="animate__animated animate__bounce"> Registrate para recibir recomendaciones<br>personalizadas y ofertas exclusivas.</h1>
+    <!-- <form action=" ACA PONGO EL LINK"> PONGO EL CIERRE  AL FINAL </form> utilizar esto si queres que diriga a otro lado -->
+    <button>Registrate</button>
+
+</section>
+
+<section id="somos-argenplanner">
+    <div class="container">
+        <div class="img-container">
+        </div>
+        <div class="texto">
+            <h2>Somos <span class = "color-acento"> ArgenPlanner</span></h2>
+        <p>
+            En nuestra empresa, nos apasiona hacer realidad los sueños de viaje de nuestros clientes. Nos especializamos en la creación de paquetes turísticos únicos y personalizados, diseñados para brindar experiencias inolvidables. Con una amplia variedad de destinos en todo el mundo, nos esforzamos por ofrecer opciones que se adapten a los diferentes gustos y preferencias de nuestros clientes.</p>
+        </div>
+    </div>
+
+</section>
+    <section id="sobrenosotros">
+        <div class="container">
+        <h2>Sobre Argenplanner.com</h2>
+        <p>La primera empresa de paquetes turisticos</p>
+        <div class="about">
+        <div class="carta">
+            <h3>Nuestra MISIÓN</h3>
+            <p>Facilitar la organización del viaje a nuestros clientes, brindándoles la mejor asesoría y atención personalizada en la planificación de sus vacaciones en Argentina, ofreciendo paquetes turísticos completos y atractivos que se ajusten a sus necesidades y presupuesto.</p>
+            
+        </div>
+        <div class="carta">
+            <h3>¿Quienes somos?</h3>
+            <p>Somos una empresa que ofrece paquetes turísticos en Argentina para que puedas disfrutar de tus vacaciones  sin preocuparte por la organización del viaje.
+                Queremos que todos puedan volar de la manera más rapida y accesible posible. </p>
+            
+        </div>
+        <div class="carta">
+            <h3>Nuestra VISIÓN</h3>
+            <p>Ser la mejor opción de paquetes turísticos en Argentina, ofreciendo a nuestros clientes una experiencia de viaje inolvidable y sin preocupaciones, a través de una gestión eficiente y accesible.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+        <ul>
+            <li>✈️ Amplia variedad de destinos</li>
+            <li>✈️ Flexibilidad en la personalización de paquetes</li>
+            <li>✈️ Atención al cliente de calidad</li>
+            <li>✈️ Ofertas y descuentos atractivos</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Listo para volar?</h2>
+        <button>Volemos!✈️ </button>
+    </section>
+
+    <footer>
+        <footer class="container"></footer>
+        <div class="left">
+          <h3>Somos ArgenPlanner</h3>
+          <p>Queremos que todos puedan volar de la manera más rápida y accesible posible. Somos una empresa que ofrece paquetes turísticos en Argentina para que puedas disfrutar de tus vacaciones sin preocuparte por la organización del viaje.</p>
+          <button>¡Conócenos!</button>
+        </div>
+        
+        <div class="center">
+          <h3>Nosotros</h3>
+          <ul>
+            <li><a href="#somos-argenplanner">Sobre ArgenPlanner</a></li>
+            <li><a href="trabaja.html">Sumate a nuestro equipo</a></li>
+            <li><a href="preguntas.html">¿Preguntas?</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <h3>Arma tu viaje</h3>
+          <ul>
+            <li><a href="Destinos.html"> Destinos</a></li>
+            <li><a href="Aeropuertos.html"> Aeropuertos</a></li>
+          </ul>
+        </div>
+      </footer>
+    </footer>
+
+</body>
+</html>
