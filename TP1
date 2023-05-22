@@ -120,3 +120,404 @@ HTML
 
 </body>
 </html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS:
+
+
+/* ARMADO PARA MOBILE FIRST */
+
+*{
+box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+
+body{
+font-family: 'Inter', sans-serif;;
+margin: 0;
+}
+
+h1{ font-size: 3.5em;
+font-family: 'Inter', sans-serif;
+font-weight: 700;}
+
+h2{ font-size: 2.7em;
+font-family: 'Inter', sans-serif;
+font-weight: 700;}
+
+h3{ 
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+p{font-size: 1.25em;}
+ul{ list-style: none;}
+li{font-size: 1.25em;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 6px #284261;
+    color: white;
+    background-color: #700C0C;
+}
+
+button:hover{
+    background-color:#284261;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+.color-acento{ color:#79A8D6}
+
+/* HEADER */
+header{
+    background-color: #334E6E;
+}
+
+header.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.logo{
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto; /* Para mantener la proporción */
+    float: left; /* Para alinear el logo a la izquierda */  
+}
+
+header nav {
+    display: flex;
+    float: right; 
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+    
+}
+
+#sobrenosotros .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sobrenosotros .carta {
+    flex: 0 0 30%;
+    margin: 20px;
+}
+
+header a:hover{
+    color: white
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white
+}
+
+#hero button{
+    font-size: 1.5em;
+}
+
+#somos-argenplanner{
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+#somos-argenplanner.container{
+    text-align: center;
+    padding: 200px 12 px;
+}
+
+#sobrenosotros{
+    background-color: #79A8D6;
+    color: white;
+    text-align: center;
+    
+    
+}
+#sobrenosotros.container{
+    padding: 150px 12px;
+}
+
+#sobrenosotros h2 {
+    margin-top: 10;
+    font-size: 3.2em;
+}
+
+
+#sobrenosotros p {
+    display: none;
+}
+
+#sobrenosotros .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("imagenes/mision.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("imagenes/quienessomos.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("imagenes/vision.jpg");
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+#final{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #79A8D6;
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer {
+    background-color: #334E6E;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+  }
+  
+  .left,
+  .center,
+  .right {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 12px;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  /* PRIMER PUNTO DE CORTE PARA DISPOSITIVOS MOVILES */
+
+  @media (min-width: 720px) {
+    header {
+      position: fixed;
+      width: 100%;
+    }
+  
+    header .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    header nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+  
+    #hero h1 {
+      font-size: 4em;
+    }
+  
+    #somos-argenplanner .container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    #somos-argenplanner .texto {
+      width: 50%;
+      max-width: 600px;
+      text-align: initial;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #somos-argenplanner h2 {
+      margin-top: 0px;
+    }
+  
+    #somos-argenplanner .img-container {
+      background-image: url("imagenes/logofondo.png");
+      background-size: cover;
+      background-position: center center;
+      height: 350px;
+      width: 400px;
+    }
+  
+    #sobrenosotros{
+        background-image: url(imagenes/nube-avion.png), url(imagenes/nube2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 200px 150px, 250px 180px;
+        background-position: top 20px left 50px, top 30% right 20px;
+      }
+
+
+    #sobrenosotros .about {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #sobrenosotros p {
+      display: block;
+      margin-bottom: 30px;
+    }
+  
+    #sobrenosotros h3 {
+      margin-top: 0;
+    }
+  
+    #sobrenosotros .carta {
+      padding: 15px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    #caracteristicas {
+      background-image: url(imagenes/ar);
+      background-repeat: no-repeat;
+      background-size: 500px 400px;
+      background-position: right bottom;
+    }
+  
+    #caracteristicas .container {
+      text-align: initial;
+    }
+  
+    #caracteristicas ul {
+      margin-left: 100px;
+    }
+  
+    #final h2 {
+      font-size: 5em;
+    }
+  
+    #final button {
+      font-size: 2em;
+    }
+  
+    footer .container {
+      justify-content: flex-end;
+    }
+    
+  }
+
+/* Estilos para pantallas grandes */
+/* Agrega aquí los estilos que deseas aplicar para pantallas grandes */
+
+@media(min-width:1100px){
+    #caracteristicas{
+        background-position: calc(100vw - 800px);
+    }
+}
+
+/* Estilos para pantallas medianas */
+/* Agrega aquí los estilos que deseas aplicar para pantallas medianas */
+
+@media (min-width: 768px) and (max-width: 1099px) {
+}
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
