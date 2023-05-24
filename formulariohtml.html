@@ -1,0 +1,73 @@
+// FORMULARIO PRINCIPAL DE BUSQUEDA//
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de búsqueda</title>
+</head>
+<body>
+	<form action="busqueda.php" method="post">
+		<label for="mes">Mes del año:</label>
+		<select id="mes" name="mes">
+			<option value="enero">Enero</option>
+			<option value="febrero">Febrero</option>
+			<option value="marzo">Marzo</option>
+			<option value="abril">Abril</option>
+			<option value="mayo">Mayo</option>
+			<option value="junio">Junio</option>
+			<option value="julio">Julio</option>
+			<option value="agosto">Agosto</option>
+			<option value="septiembre">Septiembre</option>
+			<option value="octubre">Octubre</option>
+			<option value="noviembre">Noviembre</option>
+			<option value="diciembre">Diciembre</option>
+		</select>
+
+		<br>
+
+		<label for="presupuesto">Presupuesto por persona:</label>
+		<select id="presupuesto" name="presupuesto">
+			<option value="0-100000">0 - 100.000</option>
+			<option value="0-200000">0 - 200.000</option>
+			<option value="mas-200000">Más de 200.000</option>
+		</select>
+
+		<br>
+
+		<label for="integrantes">Cantidad de integrantes del grupo familiar:</label>
+		<select id="integrantes" name="integrantes">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+
+		<br>
+
+		<label>Edad de los integrantes:</label>
+
+		<br>
+
+		<?php
+			$cantidad_integrantes = $_POST['integrantes'] ?? 1;
+			for ($i = 1; $i <= $cantidad_integrantes; $i++) {
+				echo "<label for='edad$i'>Integrante $i:</label>";
+				echo "<input type='number' id='edad$i' name='edad[]' min='0' max='99' required>";
+				echo "<br>";
+			}
+		?>
+
+		<br>
+
+		<input type="submit" value="Buscar">
+	</form>
+</body>
+</html>
+

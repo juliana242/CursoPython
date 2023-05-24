@@ -1,7 +1,7 @@
+
 *{
     box-sizing: border-box;
     }
-    
     html{
     scroll-behavior: smooth;
     }
@@ -28,7 +28,6 @@
     p{font-size: 1.25em;}
     ul{ list-style: none;}
     li{font-size: 1.25em;}
-    
 /* HEADER */
 header{
     background-color: #334E6E;
@@ -215,24 +214,72 @@ header.container {
         display: none;
       }}
 
-/*Formulario*/
-.contacto {
-    background-color: #ffffff;
+/*Hero*/
+.actividades {
+    flex-direction: column;
 }
 
-.formLabel {
-    font-size: 1.5em;
-    margin-right: 15em;
+#bariloche,
+#buenosaires,
+#mendoza,
+#salta,
+#misiones,
+#patagonia {
+    width: 33%;
+    margin: 20px;
+    height: auto;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    flex-direction: column;
 }
 
-#submit{
-    background-color: #334E6E;
-    color:whitesmoke;
+#bariloche {
+    background-image : url("imagenes/bariloche-img.png");
+}
 
+#buenosaires {
+    background-image: url("imagenes/buenos\ aires.jpeg");
+}
+
+#mendoza {
+    background-image: url("imagenes/mendoza.jpg");
+}
+ #salta {
+    background-image: url("imagenes/salta\ jujuy.webp");
+ }
+
+ #misiones {
+    background-image: url("imagenes/misiones.webp");
+ }
+
+ #patagonia {
+    background-image: url("imagenes/patagonia.jpg");
+ }
+
+.actividades h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 73%;
+    margin-left: 5%;
+    text-shadow: -2px -2px 0 black;
+}
+
+.actividades h2 {
+    color: white;
+    font-size: 15px;
+    margin-left: 5%;
+    
 }
 
 
-
+.line1,
+.line2 {
+    display: flex;
+    background: #ffffff;
+}
 
 /*Footer*/
 
@@ -254,7 +301,6 @@ header.container {
   .footer .footer-sections div {
     padding: 2rem 0rem;
     top: 0;
-    border: 1px solid #fff;
     flex: 1; 
   }
   
@@ -262,6 +308,9 @@ header.container {
     font-size: 14px;
   }
   
+  .footer a {
+    color: aliceblue;
+  }
   
   .footer ul {
     list-style: none;
@@ -276,10 +325,13 @@ header.container {
     font-size: 15px;
   }
   
+  footer .container {
+    justify-content: flex-end;
+  }
+
   .icon {
     width: 40px;
     height: 40px;
     
   }
-    
   
